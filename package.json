@@ -29,7 +29,7 @@
     "leaflet": "^1.7.1",
     "next": "^10.0.9",
     "next-pwa": "^5.0.6",
-    "react": "16.13.1",
+    "react": "^17.0.1",
     "react-dom": "16.13.1",
     "react-leaflet": "^3.1.0",
     "styled-components": "^5.1.1",

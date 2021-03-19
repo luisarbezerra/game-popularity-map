@@ -14,6 +14,7 @@ export default function Page({ heading, body }: PageTemplateProps) {
   return <PageTemplate heading={heading} body={body} />
 }
 
+// build-time page path
 export async function getStaticPaths() {
   const { pages } = await client.request<GetPagesQuery>(GET_PAGES, { first: 3 })
 
@@ -24,6 +25,7 @@ export async function getStaticPaths() {
   return { paths, fallback: true }
 }
 
+// build-time page data
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { page } = await client.request<GetPageBySlugQuery>(GET_PAGE_BY_SLUG, {
     slug: `${params?.slug}`
