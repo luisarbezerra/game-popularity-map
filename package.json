@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint src --max-warnings=0",
     "test": "jest",
-    "test:watch": "yarn test --watch"
+    "test:watch": "yarn test --watch",
+    "codegen": "graphql-codegen --config codegen.yml"
   },
   "husky": {
     "hooks": {
@@ -26,7 +27,7 @@
     "graphql": "^15.5.0",
     "graphql-request": "^3.4.0",
     "leaflet": "^1.7.1",
-    "next": "9.4.4",
+    "next": "^10.0.9",
     "next-pwa": "^5.0.6",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -36,6 +37,10 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.10.1",
+    "@graphql-codegen/add": "^2.0.2",
+    "@graphql-codegen/cli": "1.21.3",
+    "@graphql-codegen/typescript": "1.21.1",
+    "@graphql-codegen/typescript-operations": "1.17.15",
     "@testing-library/jest-dom": "^5.11.0",
     "@testing-library/react": "^10.4.3",
     "@types/jest": "^26.0.3",
