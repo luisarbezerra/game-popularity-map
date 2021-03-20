@@ -17,3 +17,8 @@ A simple project to showcase the most popular games in some countries, based on 
 - ✏️ GraphCMS
 - 🏞 Lazy Load
   
+## Preview
+
+![Preview](public/img/preview.jpeg)
+  
+  
