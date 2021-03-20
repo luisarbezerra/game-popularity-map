@@ -75,8 +75,7 @@ const Map = ({ places }: MapProps) => {
 
           const markerIcon = new L.Icon({
             iconUrl: `${icon?.url}`,
-            iconSize: [50, 50],
-            iconAnchor: [20, 55],
+            iconSize: [40, 40],
             popupAnchor: [0, -40]
           })
 
